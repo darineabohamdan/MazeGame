@@ -9,6 +9,8 @@ var score=0;
 var win=true;
 
 
+//Initial score value=0
+boundaries[5].innerHTML="score = " +score;
 
 
 
