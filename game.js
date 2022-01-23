@@ -33,4 +33,40 @@ window.onload = function () {
             });
         };
     });
-};
+//when passing from S to E without touching the boundaries, the background changes to green and 'You WON' message appears.
+end.addEventListener("mouseover",function(){
+if(win==true){
+score+=5;
+status.innerHTML="You WON!";
+for(var j=0;j<boundaries.length-1;j++){
+    boundaries[j].style.backgroundColor="green";
+    boundaries[5].innerHTML="score = "+ score; }
+}
+});
+
+
+//when clicking on S,the game restarts and the score resets.
+
+start.addEventListener("click", function(){
+score=0;
+status.innerHTML="Move the mouse cursor over to 'E' to win"
+for(var i=0;i<boundaries.length;i++){
+
+    boundaries[i].style.backgroundColor="#eeeeee";
+    boundaries[5].innerHTML="score =0 ";
+}
+});
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
